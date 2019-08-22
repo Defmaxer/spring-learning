@@ -1,12 +1,32 @@
 package ch.andres.springlearning.users;
 
 public class User {
-	String prename;
-	String lastname;
-	int age;
-	String address;
-	String birthdate;
+	private int id;
+	private String prename;
+	private String lastname;
+	private int age;
+	private String address;
+	private String birthdate;
 	
+	public User() {
+		
+	}
+	
+	public User(int id, String prename, String lastname, int age, String address, String birthdate) {
+		this.id = id;
+		this.prename = prename;
+		this.lastname = lastname;
+		this.age = age;
+		this.address = address;
+		this.birthdate = birthdate;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getPrename() {
 		return prename;
 	}
